@@ -14,13 +14,13 @@ window.addEventListener("resize", resizeCanvas);
 
 // Generate stars
 let stars = [];
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 5; i++) {
   stars.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
     r: Math.random() * 1.5 + 0.3,     // radius (0.3 - 1.8 px)
     o: Math.random(),                // initial opacity
-    d: Math.random() * 0.02 + 0.005  // twinkle delta
+    d: Math.random() * 0.01 + 0.002  // twinkle delta
   });
 }
 
