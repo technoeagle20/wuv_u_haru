@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starry Flipbook</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="background">
+    <canvas id="stars"></canvas>
+    <img src="LUNAR.png" alt="Moon" class="moon-img" />
+  </div>
+
+  <!-- Spiral binding holes -->
+  <div class="spiral-container">
+    <!-- 20 holes -->
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+    <div class="spiral-hole"></div>
+  </div>
+
+  <!-- Spiral SVG (wire style) -->
+  <div class="spiral-svg">
+    <svg width="20" height="400" viewBox="0 0 20 401" xmlns="http://www.w3.org/2000/svg">
+      <path d="
+        M10 0 
+        C20 10, 0 20, 10 30 
+        C20 40, 0 50, 10 60 
+        C20 70, 0 80, 10 90 
+        C20 100, 0 110, 10 120 
+        C20 130, 0 140, 10 150 
+        C20 160, 0 170, 10 180 
+        C20 190, 0 200, 10 210 
+        C20 220, 0 230, 10 240 
+        C20 250, 0 260, 10 270 
+        C20 280, 0 290, 10 300 
+        C20 310, 0 320, 10 330 
+        C20 340, 0 350, 10 360 
+        C20 380, 0 390, 10 400 
+      " stroke="white" stroke-width="2" fill="none"/>
+    </svg>
+  </div>
+
+  <!-- Flipbook -->
+  <div class="book">
+
+    <!-- Page 1 - Cover -->
+    <div class="page cover" onclick="flipCover(this)">
+      <div class="cover-text">I wrote you in every line</div>
+    </div>
+
+    <!-- Page 2 - Description -->
+    <div class="page" onclick="flipPage(this)">
+      <div class="description-title">Before you open just know</div>
+      <div class="description-text">
+        This book is a quiet confession — every poem inside was written for you.<br><br>
+        In every word I chose, every page I turned, there is you.  
+        <br><br>
+        This isn’t just a collection of poems. It’s a heart handed over gently, hoping you'll read between the lines.
+      </div>
+    </div>
+
+    <!-- Pages 3 to 20 - Shayari -->
+    <div class="page shayari-page" onclick="flipPage(this)">Tum bas mujhe tum ban kar milna<br> Jaise ho waise hi milna</br> Badal toh sab kuch jata hai</br> Tum bas jaise ho waise hi rehna</div>
+    <div class="page shayari-page" onclick="flipPage(this)">Nazron se dekho toh<br> Hum dono bahut dur hai<br> Dil se dekho toh<br> Hum tum dur ho kar bhi pass hai</div>
+    <div class="page shayari-page" onclick="flipPage(this)">Koyi shaam toh aisa aaye<br> Teri yaad nahi tu khud aaye<br> Dil ki har har dhadkan ko hum tham le<br> Har aunkahi baat ik dusre se bant le</div>
+    <div class="page shayari-page" onclick="flipPage(this)">Is dil ki nazuk gali me<br> Musafir bahut aaye<br> Ke is dil ke nazul gali me<br> Musafir bahut aaye<br> Bhatak toh sabhi jaate hai<br> Par yeh manzil sirf aapka hai<br> Kyun ki ik aap hi hai <br> Jo bin bole sab samajh gaye</div>
+    <div class="page shayari-page" onclick="flipPage(this)">Pathar ki likhi <br> Har lakir ko mita denge<br>Har ik kosish me <br> Apni jaan laga denge<br> Tu bas mile toh sahi <br> Fir khusi khusi yeh duniya chhod denge</div>
+    <div class="page shayari-page" onclick="flipPage(this)">************************</div>
+    <div class="page shayari-page" onclick="flipPage(this)">************************</div>
+    <div class="page shayari-page" onclick="flipPage(this)">************************</div>
+    <div class="page shayari-page" onclick="flipPage(this)">************************</div>
+    <div class="page shayari-page" onclick="flipPage(this)">************************</div>
+    <div class="page shayari-page" onclick="flipPage(this)">************************</div>
+    <div class="page shayari-page" onclick="flipPage(this)">************************</div>
+    <div class="page shayari-page" onclick="flipPage(this)">************************</div>
+    <div class="page shayari-page" onclick="flipPage(this)">************************</div>
+    <div class="page shayari-page" onclick="flipPage(this)">************************</div>
+    <div class="page shayari-page" onclick="flipPage(this)">************************</div>
+    <div class="page shayari-page" onclick="flipPage(this)">************************</div>
+    <div class="page shayari-page" onclick="flipPage(this)">************************</div>
+
+    <!-- Page 21 - Final Message -->
+    <div class="page last-page" onclick="flipPage(this)">
+      <div class="cover-text"></div>
+    </div>
+
+  </div>
+
+  <!-- Background music -->
+  <audio id="bg-music" src="dil tu jaan tu.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+HTML
