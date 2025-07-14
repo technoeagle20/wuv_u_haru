@@ -12,11 +12,13 @@ body {
 }
 
 /* Canvas stars */
+/* Canvas stars with realistic night background */
 #stars {
   position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: -3;
+  background: radial-gradient(ellipse at bottom, #000 0%, #0b0b25 100%);
 }
 
 /* Moon image */
