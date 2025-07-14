@@ -14,7 +14,7 @@ window.addEventListener("resize", resizeCanvas);
 
 // Generate stars
 let stars = [];
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 20; i++) {
   stars.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
